@@ -1,0 +1,22 @@
+Fruits=[]
+Vegetables=[]
+DryFruits=[]
+Grains=[]
+Pulses=[]
+Spices=[]
+Discount_eligible=1000
+D1={"Fruits":100,"Vegetables":150,"DryFruits":250,"Grains":120,"Spices":80,"Pulses":180}
+a=float(input("Enter the fruits in kg: "))
+b=float(input("Enter the vegetables in kg: "))
+c=float(input("Enter the dryfruits in kg: "))
+d=float(input("Enter the grains in kg: "))
+e=float(input("Enter the pulses in kg: "))
+f=float(input("Enter the spices in kg: "))
+Total=a*D1["Fruits"]+b*D1["Vegetables"]+c*D1["DryFruits"]+d*D1["Grains"]+e*D1["Pulses"]+f*D1["Spices"]
+print("Total amount: ",Total)
+if (Total>Discount_eligible):
+  discount=Total*0.1
+  Total=Total-discount
+  print("Total amount after discount: ",Total)
+else:
+  print("Total amount is: ",Total)
